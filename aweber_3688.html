@@ -68,6 +68,26 @@ jQuery(document).ready(function(){
 
 				var arg = JSON.parse(response);
 
+				if(arg.success==1)
+
+				{
+
+					$('.squeeze_wrapper').html("");
+
+					$('.squeeze_wrapper').html("<div class='no_data'>Submit Successfully</div>");
+
+				}
+
+				else
+
+				{
+
+					$('.squeeze_wrapper').html("");
+
+					$('.squeeze_wrapper').html("<div class='no_data'>Error ! Please try after sometime</div>");
+
+				}
+
 	        	//popdetialHideOther(arg);
 
 	        },
@@ -120,7 +140,7 @@ img {
 
   <!-- Header Starts Here -->
 
-  <div data-role="header"> <a href="index.html" class="refresh_link" data-role="button" rel="external" data-ajax="false" role="button"><img src="images/back_btn.png" alt="home icon" /></a>
+  <div data-role="header"> <a href="index.html" class="refresh_link" data-role="button" rel="external" data-ajax="false" role="button"><img src="images/home_icon.png" alt="home icon" /></a>
 
     <h1>Squeeze</h1>
 
